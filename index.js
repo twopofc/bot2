@@ -198,7 +198,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Xauzinho @${num.split('@')[0]}👋`
+				teks = `SAIU PORQUE É FÃ DA GROTA  @${num.split('@')[0]}👋`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -249,7 +249,7 @@ async function starts() {
 				only: {
 					group: '[❗] Este comando só pode ser usado em grupos! ❌',
 					ownerG: '[❗] Este comando so pode ser usado pelo dono do grupo! ❌',
-					ownerB: '[❗] Este comando só pode ser usado pelo Toin! ❌',
+					ownerB: '[❗] Este comando só pode ser usado pelo Twop! ❌',
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: '[❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
                                         daftarB: `──「 DAFTAR 」──\nHalo kak !\nKamu belum Terdaftar didalam database, \n\nCommand : ${prefix}daftar nama|umur\nContoh : ${prefix}daftar Ryz|17`,
@@ -357,13 +357,13 @@ async function starts() {
 					if (mentioned.length > 1) {
 						teks = ''
 						for (let _ of mentioned) {
-							teks += `иãσ мαмσυ σ bσиdє diяєiтσ є ρєяdєυ αDм 🤣 :\n`
+							teks += `NÃO MAMOU O BONDE E PERDEU ADM 🤣 :\n`
 							teks += `@_.split('@')[0]`
 						}
 						mentions(teks, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
 					} else {
-						mentions(`Não mamou direito e perdeu o ADM @${mentioned[0].split('@')[0]}\n *${groupMetadata.subject}*_`, mentioned, true)
+						mentions(`NÃO MAMOU O BONDE E PERDEU ADM @${mentioned[0].split('@')[0]}\n *${groupMetadata.subject}*_`, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
 					}
 					break
@@ -400,14 +400,14 @@ async function starts() {
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di promote!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
-						teks = 'мαмσυ σ bσиdє ρяα gαинαя αDм 🙊👀  :\n'
+						teks = 'MAMOU O BONDE PRA GANHAR ADM🙊👀  :\n'
 						for (let _ of mentioned) {
 							teks += `@${_.split('@')[0]}\n`
 						}
 						mentions(teks, mentioned, true)
 						client.groupMakeAdmin(from, mentioned)
 					} else {
-						mentions(`Mamou o Bonde para ganhar ADM 🙊👀 : @${mentioned[0].split('@')[0]}`, mentioned, true)
+						mentions(`MAMOU O BONDE PRA GANHAR ADM🙊👀 : @${mentioned[0].split('@')[0]}`, mentioned, true)
 						client.groupMakeAdmin(from, mentioned)
 					}
 					break
@@ -609,7 +609,7 @@ async function starts() {
 			    case 'nsfw':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Hmmmm 1 para ativar 0 para desativar')
+					if (args.length < 1) return reply('DIGITE 1 PARA ATIVAR E 0 PARA DESATIVAR')
 					if (Number(args[0]) === 1) {
 						if (isNsfw) return reply('NSFW ja esta ativado')
 						nsfw.push(from)
